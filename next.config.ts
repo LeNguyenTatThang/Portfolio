@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domain:["btdqgxlgwcoybeflunno.supabase.co"],
+    domains:["btdqgxlgwcoybeflunno.supabase.co"],
     qualities: [75, 85, 100],
     remotePatterns: [
       {
