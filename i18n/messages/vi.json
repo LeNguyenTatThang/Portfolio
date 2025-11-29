@@ -1,9 +1,9 @@
 {
     "HomePage": {
         "intro": "Xin chào, tôi là Lê Nguyễn Tất Thắng",
-        "location": "Hiện đang sinh sống tại Jambi, Indonesia 🇮🇩",
-        "location_type": "Làm việc trực tiếp",
-        "resume": "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đam mê, chuyên xây dựng các giải pháp kỹ thuật số có khả năng mở rộng và hiệu suất cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo giao diện người dùng thân thiện và dễ truy cập. Ở mảng backend, tôi phát triển các dịch vụ mạnh mẽ bằng Golang, và đối với di động, tôi xây dựng ứng dụng Android native bằng Kotlin. Tôi là một kỹ sư có tinh thần hợp tác, chú trọng chi tiết, cam kết mang đến những ứng dụng đa nền tảng có cấu trúc tốt và hiệu năng cao.",
+        "location": "Hiện đang sinh sống tại Hồ Chí Minh, Việt Nam",
+        "location_type": "Freelancer",
+        "resume": "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đam mê, chuyên xây dựng các giải pháp kỹ thuật số có khả năng mở rộng và hiệu suất cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo giao diện người dùng thân thiện và dễ truy cập. Ở mảng backend, tôi phát triển các dịch vụ mạnh mẽ bằng Nodejs, và đối với di động, tôi xây dựng ứng dụng Android native bằng React Native. Tôi là một kỹ sư có tinh thần hợp tác, chú trọng chi tiết, cam kết mang đến những ứng dụng đa nền tảng có cấu trúc tốt và hiệu năng cao.",
         "skills": {
             "title": "Kỹ năng",
             "sub_title": "Những kỹ năng chuyên môn của tôi."
@@ -17,7 +17,7 @@
         "title": "Giới thiệu",
         "description": "Một chút về bản thân tôi.",
         "resume": {
-            "paragraf_1": "Xin chào! Cảm ơn bạn đã ghé thăm trang cá nhân của tôi. Tôi là Lê Nguyễn Tất Thắng, sinh viên ngành Hệ thống Thông tin tại Đại học Jambi. Tôi là một lập trình viên Fullstack với niềm đam mê lớn trong việc xây dựng các sản phẩm phần mềm mang lại giá trị. Công nghệ tôi sử dụng bao gồm Next.js, TypeScript, Tailwind CSS ở frontend và Golang ở backend. Với ứng dụng di động, tôi phát triển ứng dụng Android native bằng Kotlin.",
+            "paragraf_1": "Xin chào! Cảm ơn bạn đã ghé thăm trang cá nhân của tôi. Tôi là Lê Nguyễn Tất Thắng, sinh viên ngành Công nghệ thông tin trường Đại học công nghệ Sài Gòn. Tôi là một lập trình viên Fullstack với niềm đam mê lớn trong việc xây dựng các sản phẩm phần mềm mang lại giá trị. Công nghệ tôi sử dụng bao gồm Next.js, TypeScript, Tailwind CSS ở frontend và Nodejs ở backend. Với ứng dụng di động, tôi phát triển ứng dụng Android native bằng React Native.",
             "paragraf_2": "Tôi yêu thích việc tạo ra những giải pháp thân thiện với người dùng và có hiệu năng cao. Dù là xây dựng giao diện trực quan hay thiết kế hệ thống backend, tôi luôn hướng đến sự hiệu quả và rõ ràng trong từng lớp của ứng dụng. Tôi là người học nhanh, thích nghi tốt trong môi trường năng động và tận hưởng việc giải quyết vấn đề phức tạp theo cách hợp tác.",
             "paragraf_3": "Tôi tin rằng giao tiếp tốt và tinh thần làm việc nhóm là chìa khóa thành công trong phát triển phần mềm. Kinh nghiệm của tôi giúp tôi rèn luyện kỹ năng kỹ thuật, tư duy phân tích cũng như khả năng lãnh đạo. Tôi luôn mong muốn được học hỏi từ đồng đội và đóng góp vào những dự án mang lại ảnh hưởng tích cực.",
             "paragraf_4": "Trân trọng,"
