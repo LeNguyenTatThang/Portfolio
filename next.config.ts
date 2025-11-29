@@ -6,12 +6,10 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains:["btdqgxlgwcoybeflunno.supabase.co"],
-    qualities: [75, 85, 100],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "btdqgxlgwcoybeflunno.supabase.co",
         pathname: "/**",
       },
     ]
