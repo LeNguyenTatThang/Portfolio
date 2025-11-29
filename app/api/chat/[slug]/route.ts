@@ -1,19 +1,15 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/common/utils/server"
 
-export const DELETE = async (
-    req: Request,
-    { params }: { params: { slug: string } }
-) => {
-    const supabase = await createClient()
-    try {
-        const id = params.slug
-        await supabase.from("messages").delete().eq("id", id)
-        return NextResponse.json("Data saved successfully", { status: 200 })
-    } catch (error) {
-        return NextResponse.json(
-            { message: "Internal Server Error" },
-            { status: 500 }
-        )
-    }
+export async function DELETE(req: Request, context: { params: Promise<{ slug: string }> }) {
+  const supabase = await createClient()
+  const { slug: id } = await context.params
+
+  try
+    await supabase.from("messages").delete().eq("id", id)
+
+    return NextResponse.json("Data saved successfully", { status: 200 })
+
+  catch
+    return NextResponse.json({ message: "Internal Server Error" }, { status: 500 })
 }
