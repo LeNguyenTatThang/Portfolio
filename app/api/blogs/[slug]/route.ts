@@ -1,8 +1,8 @@
-import { NextResponse } from "next/server"
+import { NextResponse, NextRequest } from "next/server"
 import { getBlogsDataBySlug } from "@/services/blogs"
 
 export const GET = async (
-    req: Request,
+    req: NextRequest,
     { params }: { params: { slug: string } }
 ) => {
     try {
