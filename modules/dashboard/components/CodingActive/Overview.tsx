@@ -1,35 +1,35 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl"
 
-import { formatDate } from "@/common/helpers";
+import { formatDate } from "@/common/helpers"
 
-import OverviewItem from "./OverviewItem";
+import OverviewItem from "./OverviewItem"
 
 interface OverviewProps {
     data: {
-        human_readable_total?: string;
-        human_readable_daily_average?: string;
+        human_readable_total?: string
+        human_readable_daily_average?: string
         best_day?: {
-            text?: string;
-            date?: string;
-        };
+            text?: string
+            date?: string
+        }
         all_time_since_today?: {
-            text?: string;
-        };
-        start_date?: string;
-        end_date?: string;
-    };
+            text?: string
+        }
+        start_date?: string
+        end_date?: string
+    }
 }
 
 const Overview = ({ data }: OverviewProps) => {
-    const t = useTranslations("DashboardPage.wakatime");
+    const t = useTranslations("DashboardPage.wakatime")
 
-    const dailyTotal = data?.human_readable_total || "N/A";
-    const dailyAverage = data?.human_readable_daily_average || "N/A";
-    const bestDayText = data?.best_day?.text || "N/A";
+    const dailyTotal = data?.human_readable_total || "N/A"
+    const dailyAverage = data?.human_readable_daily_average || "N/A"
+    const bestDayText = data?.best_day?.text || "N/A"
     const bestDayDate = data?.best_day?.date;
-    const allTimeSinceToday = data?.all_time_since_today?.text || "N/A";
-    const startDate = data?.start_date ? formatDate(data.start_date) : "N/A";
-    const endDate = data?.end_date ? formatDate(data.end_date) : "N/A";
+    const allTimeSinceToday = data?.all_time_since_today?.text || "N/A"
+    const startDate = data?.start_date ? formatDate(data.start_date) : "N/A"
+    const endDate = data?.end_date ? formatDate(data.end_date) : "N/A"
     const bestDay = bestDayDate
         ? `${formatDate(bestDayDate)} (${bestDayText})`
         : "N/A";
@@ -46,7 +46,7 @@ const Overview = ({ data }: OverviewProps) => {
                 value={allTimeSinceToday}
             />
         </div>
-    );
-};
+    )
+}
 
-export default Overview;
+export default Overview

@@ -54,7 +54,7 @@ const ChatList = ({
         const handleResize = () => {
             const newHeight = isWidget ? '500px' : `${window.innerHeight - 360}px`
             setChatListHeight(newHeight)
-        };
+        }
 
         handleResize()
 

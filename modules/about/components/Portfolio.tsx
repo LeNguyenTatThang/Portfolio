@@ -6,7 +6,7 @@ const Portfolio = () => {
     const t = useTranslations("AboutPage")
 
     const PORTFOLIO_URL =
-        "#";
+        "#"
 
     return (
         <Link

@@ -91,7 +91,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
             ref={containerRef}
         >
             {words.map((word, index) => {
-                const isActive = index === currentIndex;
+                const isActive = index === currentIndex
                 return (
                     <span
                         key={index}
@@ -102,14 +102,14 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                         style={{
                             filter: isActive ? "blur(0px)" : `blur(${blurAmount}px)`,
                             transition: `filter ${animationDuration}s ease`,
-                            willChange: "filter",
+                            willChange: "filter"
                         }}
                         onMouseEnter={() => handleMouseEnter(index)}
                         onMouseLeave={handleMouseLeave}
                     >
                         {word}
                     </span>
-                );
+                )
             })}
 
             <motion.div
@@ -129,7 +129,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                         transform: "translateZ(0)",
                         willChange: "transform, width, height, opacity",
                         "--border-color": borderColor,
-                        "--glow-color": glowColor,
+                        "--glow-color": glowColor
                     } as React.CSSProperties
                 }
             />

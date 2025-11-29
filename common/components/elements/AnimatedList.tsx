@@ -75,7 +75,7 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
     className = "",
     itemClassName = "",
     displayScrollbar = true,
-    initialSelectedIndex = -1,
+    initialSelectedIndex = -1
 }) => {
     const listRef = useRef<HTMLDivElement>(null)
     const [selectedIndex, setSelectedIndex] =
@@ -155,7 +155,7 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
                 onScroll={handleScroll}
                 style={{
                     scrollbarWidth: displayScrollbar ? "thin" : "none",
-                    scrollbarColor: "#222 #060010",
+                    scrollbarColor: "#222 #060010"
                 }}
             >
                 {items.map((item, index) => (

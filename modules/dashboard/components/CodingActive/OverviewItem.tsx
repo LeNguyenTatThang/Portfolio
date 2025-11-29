@@ -1,8 +1,8 @@
-import SpotlightCard from "@/common/components/elements/SpotlightCard";
+import SpotlightCard from "@/common/components/elements/SpotlightCard"
 
 interface OverviewItemProps {
-    label: string;
-    value: string;
+    label: string
+    value: string
 }
 
 const OverviewItem = ({ label, value }: OverviewItemProps) => {
@@ -11,7 +11,7 @@ const OverviewItem = ({ label, value }: OverviewItemProps) => {
             <span className="text-sm dark:text-neutral-400 text-neutral-600">{label}</span>
             <span>{value || "-"}</span>
         </SpotlightCard>
-    );
-};
+    )
+}
 
-export default OverviewItem;
+export default OverviewItem

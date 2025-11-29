@@ -1,4 +1,4 @@
-import { CareerProps } from "../types/careers";
+import { CareerProps } from "../types/careers"
 
 export const CAREERS: CareerProps[] = [
     {
@@ -19,6 +19,6 @@ export const CAREERS: CareerProps[] = [
             "Participated in code reviews, performance optimization, and deployment automation to improve development efficiency and maintain product reliability.",
             "Supported offshore development processes by ensuring clear communication, documentation, and alignment with Japanese project management workflows."
         ],
-        isShow: true,
+        isShow: true
     }
 ]

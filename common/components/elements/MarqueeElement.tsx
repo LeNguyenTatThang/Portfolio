@@ -3,13 +3,13 @@ import Marquee from "react-fast-marquee"
 interface MarqueeElementProps {
     children: React.ReactNode;
     direction?: "left" | "right" | "up"
-    withPadding?: boolean;
+    withPadding?: boolean
 }
 
 const MarqueeElement = ({
     children,
     direction = "left",
-    withPadding = true,
+    withPadding = true
 }: MarqueeElementProps) => {
     return (
         <Marquee

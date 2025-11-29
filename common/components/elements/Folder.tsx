@@ -109,7 +109,7 @@ const Folder: React.FC<FolderProps> = ({
                         style={{
                             backgroundColor: color,
                             borderRadius: "5px 10px 10px 10px",
-                            transform: "skew(-15deg) scaleY(0.6)",
+                            transform: "skew(-15deg) scaleY(0.6)"
                         }}
                     ></div>
                 </div>

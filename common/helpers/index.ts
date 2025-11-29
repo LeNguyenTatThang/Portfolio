@@ -6,7 +6,7 @@ export const convertToOrdinal = (number: number) => {
         return "Invalid number"
     }
 
-    let suffix = "";
+    let suffix = ""
     if (number % 100 >= 11 && number % 100 <= 13) {
         suffix = "th"
     } else {
@@ -36,7 +36,7 @@ export const formatDate = (date: string, type = "MMMM dd, yyyy") => {
 
     const formattedDate = format(
         toZonedTime(parseISO(date), "Asia/Ho_Chi_Minh"),
-        type,
+        type
     )
 
     return formattedDate

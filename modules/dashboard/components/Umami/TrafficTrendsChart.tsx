@@ -54,19 +54,19 @@ const TrafficTrendsChart = ({ data }: DataProps) => {
                 data: data?.pageviews?.map((point) => point.y),
                 backgroundColor: "rgba(239, 213, 19, 0.7)",
                 stack: "traffic"
-            },
-        ],
-    };
+            }
+        ]
+    }
 
     const options: ChartOptions<"bar"> = {
         responsive: true,
         plugins: {
             legend: {
-                position: "top",
+                position: "top"
             },
             title: {
                 display: true,
-                text: "Stacked Traffic Trends",
+                text: "Stacked Traffic Trends"
             },
             tooltip: {
                 callbacks: {
@@ -74,16 +74,16 @@ const TrafficTrendsChart = ({ data }: DataProps) => {
                         const index = tooltipItems[0].dataIndex;
                         const isoDate = rawLabels[index];
                         return format(parseISO(isoDate), "MMM yyyy")
-                    },
-                },
+                    }
+                }
             }
         },
         scales: {
             x: {
-                stacked: true,
+                stacked: true
             },
             y: {
-                stacked: true,
+                stacked: true
             }
         }
     }

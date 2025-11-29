@@ -1,10 +1,10 @@
-import AnimateCounter from "@/common/components/elements/AnimateCounter";
-import SpotlightCard from "@/common/components/elements/SpotlightCard";
+import AnimateCounter from "@/common/components/elements/AnimateCounter"
+import SpotlightCard from "@/common/components/elements/SpotlightCard"
 
 interface OverviewItemProps {
-    label: string;
-    value: number;
-    unit?: string;
+    label: string
+    value: number
+    unit?: string
 }
 
 const OverviewItem = ({ label, value, unit = "" }: OverviewItemProps) => (
@@ -18,6 +18,6 @@ const OverviewItem = ({ label, value, unit = "" }: OverviewItemProps) => (
             {unit && <span className="text-sm dark:text-neutral-400"> {unit}</span>}
         </div>
     </SpotlightCard>
-);
+)
 
-export default OverviewItem;
+export default OverviewItem

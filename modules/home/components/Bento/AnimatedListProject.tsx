@@ -15,8 +15,8 @@ const AnimatedListProject = () => {
             .sort((a: ProjectItem, b: ProjectItem) => b.id - a.id)
             .map((item: ProjectItem) => ({
                 image: item.image,
-                slug: `/projects/${item.slug}`,
-            })) ?? [];
+                slug: `/projects/${item.slug}`
+            })) ?? []
 
     return (
         <AnimatedList

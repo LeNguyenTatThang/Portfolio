@@ -8,13 +8,13 @@ export interface ScrollStackItemProps {
 
 export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
     children,
-    itemClassName = "",
+    itemClassName = ""
 }) => (
     <div
         className={`scroll-stack-card relative my-8 box-border h-80 w-full origin-top rounded-[40px] p-12 shadow-[0_0_30px_rgba(0,0,0,0.1)] will-change-transform ${itemClassName}`.trim()}
         style={{
             backfaceVisibility: "hidden",
-            transformStyle: "preserve-3d",
+            transformStyle: "preserve-3d"
         }}
     >
         {children}
@@ -64,7 +64,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
             if (scrollTop > end) return 1
             return (scrollTop - start) / (end - start)
         },
-        [],
+        []
     )
 
     const parsePercentage = useCallback(
@@ -74,7 +74,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
             }
             return parseFloat(value as string)
         },
-        [],
+        []
     )
 
     const updateCardTransforms = useCallback(() => {
@@ -248,7 +248,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
             card.style.webkitTransform = "translateZ(0)"
             card.style.perspective = "1000px"
             card.style.webkitPerspective = "1000px"
-        });
+        })
 
         setupLenis()
 
@@ -291,7 +291,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
                 scrollBehavior: "smooth",
                 WebkitTransform: "translateZ(0)",
                 transform: "translateZ(0)",
-                willChange: "scroll-position",
+                willChange: "scroll-position"
             }}
         >
             <div className="scroll-stack-inner min-h-screen px-20 pb-[50rem] pt-[20vh]">

@@ -1,26 +1,25 @@
-import { useSession, signOut } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import { FiMinimize2 as MinimizeIcon } from "react-icons/fi";
-import { HiOutlineLogout as SignOutIcon } from "react-icons/hi";
-import { PiChatTeardropDotsBold as ChatRoomIcon } from "react-icons/pi";
-
-import Tooltip from "@/common/components/elements/Tooltip";
-import useChatStore from "@/common/stores/chat";
-import { useTranslations } from "next-intl";
+import { useSession, signOut } from "next-auth/react"
+import { useRouter } from "next/navigation"
+import { FiMinimize2 as MinimizeIcon } from "react-icons/fi"
+import { HiOutlineLogout as SignOutIcon } from "react-icons/hi"
+import { PiChatTeardropDotsBold as ChatRoomIcon } from "react-icons/pi"
+import Tooltip from "@/common/components/elements/Tooltip"
+import useChatStore from "@/common/stores/chat"
+import { useTranslations } from "next-intl"
 
 const ChatWidgetHeader = () => {
-    const { toggleChat } = useChatStore();
+    const { toggleChat } = useChatStore()
 
-    const { data: session } = useSession();
+    const { data: session } = useSession()
 
-    const t = useTranslations("ChatRoomPage.widget");
+    const t = useTranslations("ChatRoomPage.widget")
 
-    const router = useRouter();
+    const router = useRouter()
 
     const handleClick = () => {
-        router.push("/chat");
-        toggleChat();
-    };
+        router.push("/chat")
+        toggleChat()
+    }
 
     return (
         <div className="flex items-center justify-between border-b p-4 dark:border-neutral-600">
@@ -53,7 +52,7 @@ const ChatWidgetHeader = () => {
                 )}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ChatWidgetHeader;
+export default ChatWidgetHeader

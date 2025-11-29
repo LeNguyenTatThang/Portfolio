@@ -13,7 +13,7 @@ const AchievementCard = ({
     issue_date,
     expiration_date,
     image,
-    url_credential,
+    url_credential
 }: AchievementItem) => {
     const issueDate = format(parseISO(issue_date), "MMMM yyyy")
 

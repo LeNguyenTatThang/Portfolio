@@ -12,7 +12,7 @@ import { a11yDark as themeColor } from "react-syntax-highlighter/dist/cjs/styles
 import { useCopyToClipboard } from "usehooks-ts"
 import {
     HiCheckCircle as CheckIcon,
-    HiOutlineClipboardCopy as CopyIcon,
+    HiOutlineClipboardCopy as CopyIcon
 } from "react-icons/hi"
 
 type CodeProps = {
@@ -103,7 +103,7 @@ const CodeBlock = ({
     )
 }
 
-const LoadingPlaceholder = () => <div className="mb-12 mt-12 h-36 w-full" />;
+const LoadingPlaceholder = () => <div className="mb-12 mt-12 h-36 w-full" />
 
 export default dynamic(() => Promise.resolve(CodeBlock), {
     ssr: false,

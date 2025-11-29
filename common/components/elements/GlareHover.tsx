@@ -50,7 +50,7 @@ const GlareHover: React.FC<GlareHoverProps> = ({
     const overlayRef = useRef<HTMLDivElement | null>(null)
 
     const animateIn = () => {
-        const el = overlayRef.current;
+        const el = overlayRef.current
         if (!el) return
 
         el.style.transition = "none"

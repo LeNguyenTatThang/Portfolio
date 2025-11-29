@@ -46,7 +46,7 @@ const CodingActive = () => {
             return <span>{formattedLastUpdate}</span>
         }
         return null
-    };
+    }
 
     if (!is_active) return null
 

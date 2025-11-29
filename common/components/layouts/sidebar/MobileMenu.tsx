@@ -1,9 +1,6 @@
 import { motion } from "framer-motion"
-
 import { MENU } from "@/common/constants/menu"
-
 import Breakline from "../../elements/Breakline"
-
 import Menu from "./Menu"
 
 const MobileMenu = () => {

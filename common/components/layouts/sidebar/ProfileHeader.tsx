@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { MdVerified as VerifiedIcon } from "react-icons/md"
-
 import ThemeToggle from "./ThemeToggle"
 import IntlToggle from "./IntlToggle"
 import Tooltip from "../../elements/Tooltip"
@@ -17,7 +16,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         <div
             className={cn(
                 "flex w-full flex-grow items-center gap-4 lg:flex-col lg:gap-0.5",
-                expandMenu && "flex-col !items-start",
+                expandMenu && "flex-col !items-start"
             )}
         >
                 <Image

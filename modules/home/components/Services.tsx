@@ -32,7 +32,7 @@ const Services = () => {
                             stiffness: 300,
                             duration: 1,
                             repeat: Infinity,
-                            repeatType: "loop",
+                            repeatType: "loop"
                         }}
                     >
                         <CTAIcon size={27} />

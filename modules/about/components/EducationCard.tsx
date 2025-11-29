@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { BsBuildings as CompanyIcon } from "react-icons/bs";
-
-import { EducationProps } from "@/common/types/education";
-import SpotlightCard from "@/common/components/elements/SpotlightCard";
+import Image from "next/image"
+import { BsBuildings as CompanyIcon } from "react-icons/bs"
+import { EducationProps } from "@/common/types/education"
+import SpotlightCard from "@/common/components/elements/SpotlightCard"
 
 const EducationCard = ({
     school,
@@ -12,7 +11,7 @@ const EducationCard = ({
     startYear,
     endYear,
     link,
-    location,
+    location
 }: EducationProps) => {
     return (
         <SpotlightCard className="flex items-start gap-5 p-6">

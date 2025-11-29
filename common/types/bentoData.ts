@@ -15,5 +15,5 @@ export const BENTO_DATA: BentoData[] = [
     { id: 3, title: "Skills & Tools", isShow: true },
     { id: 4, title: "Achievements", isShow: true },
     { id: 5, title: "Chat Room", isShow: true },
-    { id: 6, title: "Services", isShow: true },
+    { id: 6, title: "Services", isShow: true }
 ]

@@ -11,7 +11,7 @@ const BentoCard = ({
     visual,
     href,
     colSpan,
-    className,
+    className
 }: BentoItemProps) => {
     return (
         <SpotlightCard

@@ -7,9 +7,9 @@ import { METADATA } from "@/common/constants/metadata"
 export const metadata: Metadata = {
   title: `${METADATA.creator} | Personal Website`,
   alternates: {
-    canonical: `${process.env.DOMAIN}`,
-  },
-};
+    canonical: `${process.env.DOMAIN}`
+  }
+}
 
 const HomePage = () => {
   return (

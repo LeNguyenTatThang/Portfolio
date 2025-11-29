@@ -110,7 +110,7 @@ const FuzzyText: React.FC<FuzzyTextProps> = ({
                     -fuzzRange,
                     offscreenWidth + 2 * fuzzRange,
                     tightHeight + 2 * fuzzRange,
-                );
+                )
                 const intensity = isHovering ? hoverIntensity : baseIntensity
                 for (let j = 0; j < tightHeight; j++) {
                     const dx = Math.floor(intensity * (Math.random() - 0.5) * fuzzRange)

@@ -73,7 +73,7 @@ const MDXComponent = ({ children }: MarkdownRendererProps) => {
                     <td className="border px-3 py-1 dark:border-neutral-600" {...rest}>
                         {children}
                     </td>
-                ),
+                )
             }}
         >
             {children}

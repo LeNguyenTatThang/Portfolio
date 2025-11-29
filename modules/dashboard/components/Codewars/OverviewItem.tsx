@@ -1,10 +1,10 @@
-import AnimateCounter from "@/common/components/elements/AnimateCounter";
-import Card from "@/common/components/elements/Card";
+import AnimateCounter from "@/common/components/elements/AnimateCounter"
+import Card from "@/common/components/elements/Card"
 
 interface OverviewItemProps {
-    label: string;
-    value: number | string;
-    unit?: string;
+    label: string
+    value: number | string
+    unit?: string
 }
 
 const OverviewItem = ({ label, value, unit = "" }: OverviewItemProps) => (
@@ -22,6 +22,6 @@ const OverviewItem = ({ label, value, unit = "" }: OverviewItemProps) => (
             </div>
         )}
     </Card>
-);
+)
 
-export default OverviewItem;
+export default OverviewItem

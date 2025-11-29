@@ -1,13 +1,11 @@
-import { TbSchool as EducationIcon } from "react-icons/tb";
-
-import SectionHeading from "@/common/components/elements/SectionHeading";
-import SectionSubHeading from "@/common/components/elements/SectionSubHeading";
-import { EDUCATION } from "@/common/constants/education";
-
-import EducationCard from "./EducationCard";
-import { useTranslations } from "next-intl";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
+import { TbSchool as EducationIcon } from "react-icons/tb"
+import SectionHeading from "@/common/components/elements/SectionHeading"
+import SectionSubHeading from "@/common/components/elements/SectionSubHeading"
+import { EDUCATION } from "@/common/constants/education"
+import EducationCard from "./EducationCard"
+import { useTranslations } from "next-intl"
+import Portfolio from "./Portfolio"
+import Resume from "./Resume"
 
 const EducationList = () => {
     const t = useTranslations("AboutPage.education");
@@ -31,7 +29,7 @@ const EducationList = () => {
                 ))}
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default EducationList;
+export default EducationList

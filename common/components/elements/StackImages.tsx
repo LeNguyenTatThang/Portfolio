@@ -79,7 +79,7 @@ export default function Stack({
             style={{
                 width: cardDimensions.width,
                 height: cardDimensions.height,
-                perspective: 600,
+                perspective: 600
             }}
         >
             {cards.map((card, index) => {
@@ -97,17 +97,17 @@ export default function Stack({
                             animate={{
                                 rotateZ: (cards.length - index - 1) * 4 + randomRotate,
                                 scale: 1 + index * 0.06 - cards.length * 0.06,
-                                transformOrigin: "90% 90%",
+                                transformOrigin: "90% 90%"
                             }}
                             initial={false}
                             transition={{
                                 type: "spring",
                                 stiffness: animationConfig.stiffness,
-                                damping: animationConfig.damping,
+                                damping: animationConfig.damping
                             }}
                             style={{
                                 width: cardDimensions.width,
-                                height: cardDimensions.height,
+                                height: cardDimensions.height
                             }}
                         >
                             <Image

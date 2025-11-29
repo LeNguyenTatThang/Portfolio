@@ -47,7 +47,7 @@ const ComboBoxFilter = () => {
         } else {
             setSelectValue("")
         }
-    }, [domainParams]);
+    }, [domainParams])
 
     useEffect(() => {
         if (selectValue === "") {

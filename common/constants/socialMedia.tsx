@@ -2,10 +2,9 @@ import {
     BsGithub as GithubIcon,
     BsInstagram as InstagramIcon,
     BsLinkedin as LinkedinIcon,
-    BsTiktok as TiktokIcon,
+    BsTiktok as TiktokIcon
 } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
-
 import { SocialMediaProps } from "../types/socialMedia"
 
 const iconSize = 35
@@ -24,7 +23,7 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
         borderColor: "border-red-300",
         backgroundGradientColor: "bg-gradient-to-b from-red-700 to-red-900",
         colSpan: "md:col-span-2",
-        isShow: true,
+        isShow: true
     },
     {
         title: "Follow My Journey",
@@ -38,7 +37,7 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
         borderColor: "border-purple-200",
         backgroundGradientColor:
             "bg-gradient-to-b from-purple-700 via-pink-500 to-orange-500",
-        isShow: true,
+        isShow: true
     },
     {
         title: "Let's Connect",
@@ -52,7 +51,7 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
         backgroundColor: "bg-sky-300",
         borderColor: "border-sky-300",
         backgroundGradientColor: "bg-gradient-to-b from-sky-700 to-sky-900",
-        isShow: true,
+        isShow: true
     },
     {
         title: "Join the Fun",
@@ -65,7 +64,7 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
         backgroundColor: "bg-neutral-400",
         borderColor: "border-neutral-400",
         backgroundGradientColor: "bg-gradient-to-b from-neutral-700 to-neutral-900",
-        isShow: true,
+        isShow: true
     },
     {
         title: "Explore the Code",
@@ -78,6 +77,6 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
         backgroundColor: "bg-slate-400",
         borderColor: "border-slate-400",
         backgroundGradientColor: "bg-gradient-to-b from-slate-900 to-slate-950",
-        isShow: true,
+        isShow: true
     }
 ]

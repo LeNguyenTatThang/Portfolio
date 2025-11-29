@@ -1,6 +1,6 @@
-import Card from "@/common/components/elements/Card";
-import SkeletonLoader from "@/common/components/elements/SkeletonLoader";
-import Skeleton from "react-loading-skeleton";
+import Card from "@/common/components/elements/Card"
+import SkeletonLoader from "@/common/components/elements/SkeletonLoader"
+import Skeleton from "react-loading-skeleton"
 
 const CodewarsSkeleton = () => {
     return (
@@ -23,7 +23,7 @@ const CodewarsSkeleton = () => {
                 ))}
             </div>
         </SkeletonLoader>
-    );
-};
+    )
+}
 
-export default CodewarsSkeleton;
+export default CodewarsSkeleton

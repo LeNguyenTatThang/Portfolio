@@ -1,6 +1,6 @@
-import { ChatRoom } from "./ChatRoom";
-import ChatWidgetHeader from "./ChatWidgetHeader";
-import { AnimatePresence, motion } from "framer-motion";
+import { ChatRoom } from "./ChatRoom"
+import ChatWidgetHeader from "./ChatWidgetHeader"
+import { AnimatePresence, motion } from "framer-motion"
 
 const ChatWidget = () => {
     return (
@@ -16,7 +16,7 @@ const ChatWidget = () => {
                 <ChatRoom isWidget={true} />
             </motion.div>
         </AnimatePresence>
-    );
-};
+    )
+}
 
-export default ChatWidget;
+export default ChatWidget

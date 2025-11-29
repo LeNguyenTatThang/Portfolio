@@ -257,7 +257,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
                                         <span className="whitespace-pre"> </span>
                                     )}
                                 </span>
-                            );
+                            )
                         })}
                     </motion.span>
                 </AnimatePresence>

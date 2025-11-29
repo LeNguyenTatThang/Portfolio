@@ -21,7 +21,7 @@ const ChatInput = ({
     onSendMessage,
     onCancelReply,
 }: ChatInputPropsNew) => {
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("")
     const [isSending, setIsSending] = useState(false)
 
     const inputRef = useRef<HTMLInputElement | null>(null)

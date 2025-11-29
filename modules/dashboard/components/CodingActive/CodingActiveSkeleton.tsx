@@ -1,7 +1,7 @@
-import Skeleton from "react-loading-skeleton";
+import Skeleton from "react-loading-skeleton"
 
-import SkeletonLoader from "@/common/components/elements/SkeletonLoader";
-import SpotlightCard from "@/common/components/elements/SpotlightCard";
+import SkeletonLoader from "@/common/components/elements/SkeletonLoader"
+import SpotlightCard from "@/common/components/elements/SpotlightCard"
 
 const CodingActiveSkeleton = () => {
     return (
@@ -23,7 +23,7 @@ const CodingActiveSkeleton = () => {
                 </div>
             </SpotlightCard>
         </SkeletonLoader>
-    );
-};
+    )
+}
 
-export default CodingActiveSkeleton;
+export default CodingActiveSkeleton

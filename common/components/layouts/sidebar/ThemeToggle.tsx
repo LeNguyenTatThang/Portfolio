@@ -37,7 +37,7 @@ const ThemeToggle = () => {
                     transition={{
                         type: "spring",
                         stiffness: 300,
-                        damping: 30,
+                        damping: 30
                     }}
                 />
 

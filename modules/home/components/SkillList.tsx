@@ -14,7 +14,7 @@ const SkillList = () => {
         .filter(([, value]) => value.isActive)
         .map(([name, value]) => [
             name,
-            { icon: value.icon, background: value.background },
+            { icon: value.icon, background: value.background }
         ])
 
     return (

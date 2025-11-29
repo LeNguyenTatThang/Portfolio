@@ -2,7 +2,6 @@
 
 import clsx from "clsx"
 import { ChangeEvent, useState, useTransition } from "react"
-
 import { Locale } from "@/config"
 import { setUserLocale } from "@/services/locale"
 
@@ -17,7 +16,7 @@ const LocaleSwitcherSelect = ({
     label,
     defaultValue
 }: LocaleSwitcherSelectProps) => {
-    const [isPending, startTransition] = useTransition();
+    const [isPending, startTransition] = useTransition()
     const [isShow, setIsShow] = useState(false)
 
     const onSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -31,7 +30,7 @@ const LocaleSwitcherSelect = ({
         <button
             className={clsx(
                 "flex items-center justify-center text-neutral-900 dark:text-neutral-300 ",
-                isPending && "transition-opacity [&:disabled]:opacity-30",
+                isPending && "transition-opacity [&:disabled]:opacity-30"
             )}
             onClick={() => setIsShow(!isShow)}
         >

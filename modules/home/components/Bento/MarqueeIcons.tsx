@@ -1,19 +1,19 @@
-import SkillCard from "../SkillCard";
+import SkillCard from "../SkillCard"
 
-import MarqueeElement from "@/common/components/elements/MarqueeElement";
-import { STACKS } from "@/common/constants/stacks";
+import MarqueeElement from "@/common/components/elements/MarqueeElement"
+import { STACKS } from "@/common/constants/stacks"
 
 const MarqueeIcons = () => {
     const stacksInArray: Array<[string, { icon: React.ReactElement; color: string }]> =
         Object.entries(STACKS)
             .filter(([, value]) => value.isActive)
             .sort(() => Math.random() - 0.5)
-            .map(([name, value]) => [name, { icon: value.icon, color: value.color }]);
+            .map(([name, value]) => [name, { icon: value.icon, color: value.color }])
 
     return (
         <div className="flex flex-col overflow-x-hidden">
             {Array.from({ length: 2 }, (_, index) => {
-                const slider = [...stacksInArray].sort(() => Math.random() - 0.5);
+                const slider = [...stacksInArray].sort(() => Math.random() - 0.5)
                 return (
                     <MarqueeElement
                         key={index}
@@ -23,7 +23,7 @@ const MarqueeIcons = () => {
                             <SkillCard key={index} name={name} icon={icon} color={color} />
                         ))}
                     </MarqueeElement>
-                );
+                )
             })}
         </div>
     )

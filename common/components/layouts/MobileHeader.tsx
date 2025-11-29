@@ -1,10 +1,8 @@
 import clsx from "clsx"
 import Link from "next/link"
 import { MdVerified as VerifiedIcon } from "react-icons/md"
-
 import useIsMobile from "@/hooks/useIsMobile"
 import { useMenu } from "@/common/stores/menu"
-
 import ThemeToggle from "./sidebar/ThemeToggle"
 import MobileMenuButton from "./sidebar/MobileMenuButton"
 import MobileMenu from "./sidebar/MobileMenu"

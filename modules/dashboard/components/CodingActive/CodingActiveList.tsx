@@ -1,27 +1,27 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl"
 
-import Progress from "./Progress";
+import Progress from "./Progress"
 
-import SpotlightCard from "@/common/components/elements/SpotlightCard";
+import SpotlightCard from "@/common/components/elements/SpotlightCard"
 
 interface ItemProps {
-    name: string;
-    hours: number;
-    minutes: number;
+    name: string
+    hours: number
+    minutes: number
 }
 
 interface CodingActiveListProps {
     data?: {
-        languages?: ItemProps[];
-        categories?: ItemProps[];
-    };
+        languages?: ItemProps[]
+        categories?: ItemProps[]
+    }
 }
 
 const CodingActiveList = ({ data }: CodingActiveListProps) => {
-    const t = useTranslations("DashboardPage.wakatime");
+    const t = useTranslations("DashboardPage.wakatime")
 
     if (!data) {
-        return null;
+        return null
     }
 
     return (
@@ -39,7 +39,7 @@ const CodingActiveList = ({ data }: CodingActiveListProps) => {
                 ))}
             </ul>
         </SpotlightCard>
-    );
-};
+    )
+}
 
-export default CodingActiveList;
+export default CodingActiveList

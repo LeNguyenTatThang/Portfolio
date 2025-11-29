@@ -21,9 +21,9 @@ const Profile = () => {
         setIsMobile(window.innerWidth < 769)
 
         const handleResize = () => {
-            setWidth(window.innerWidth);
+            setWidth(window.innerWidth)
             setIsMobile(window.innerWidth < 769)
-        };
+        }
 
         window.addEventListener("resize", handleResize)
 

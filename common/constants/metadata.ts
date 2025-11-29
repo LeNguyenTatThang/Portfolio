@@ -19,7 +19,7 @@ export const METADATA = {
         "Git",
         "GitHub",
         "GitLab",
-        "Docker",
+        "Docker"
     ],
     authors: {
         name: "Lê Nguyễn Tất Thắng",
@@ -30,7 +30,7 @@ export const METADATA = {
         title: "Lê Nguyễn Tất Thắng - Portfolio",
         description: "Portfolio of Lê Nguyễn Tất Thắng - Fullstack Developer",
         siteName: "Lê Nguyễn Tất Thắng",
-        locale: "vi_VN",
+        locale: "vi_VN"
     },
     exTitle: "Lê Nguyễn Tất Thắng - Portfolio",
     profile: "/images/dez.png"

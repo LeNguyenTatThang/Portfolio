@@ -1,5 +1,4 @@
 import { MenuProps } from "@/common/types/menu"
-
 import MenuItem from "./MenuItem"
 
 interface MenuItemProps {

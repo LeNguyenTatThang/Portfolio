@@ -1,34 +1,34 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import useSWR from "swr";
-import { BsGithub as GithubIcon } from "react-icons/bs";
-import { useTranslations } from "next-intl";
+import Link from "next/link"
+import useSWR from "swr"
+import { BsGithub as GithubIcon } from "react-icons/bs"
+import { useTranslations } from "next-intl"
 
-import Overview from "./Overview";
-import Calendar from "./Calendar";
+import Overview from "./Overview"
+import Calendar from "./Calendar"
 
-import SectionHeading from "@/common/components/elements/SectionHeading";
-import SectionSubHeading from "@/common/components/elements/SectionSubHeading";
-import ContributionsSkeleton from "./ContributionsSkeleton";
-import EmptyState from "@/common/components/elements/EmptyState";
-import { GITHUB } from "@/common/constants/github";
-import { fetcher } from "@/services/fetcher";
+import SectionHeading from "@/common/components/elements/SectionHeading"
+import SectionSubHeading from "@/common/components/elements/SectionSubHeading"
+import ContributionsSkeleton from "./ContributionsSkeleton"
+import EmptyState from "@/common/components/elements/EmptyState"
+import { GITHUB } from "@/common/constants/github"
+import { fetcher } from "@/services/fetcher"
 
 interface ContributionsProps {
-    endpoint: string;
+    endpoint: string
 }
 
 const Contributions = ({ endpoint }: ContributionsProps) => {
-    const { data, isLoading, error } = useSWR(endpoint, fetcher);
+    const { data, isLoading, error } = useSWR(endpoint, fetcher)
     const contributionCalendar =
-        data?.contributionsCollection?.contributionCalendar;
+        data?.contributionsCollection?.contributionCalendar
 
-    const { githubUrl, isActive } = GITHUB;
+    const { githubUrl, isActive } = GITHUB
 
-    const t = useTranslations("DashboardPage");
+    const t = useTranslations("DashboardPage")
 
-    if (!isActive) return null;
+    if (!isActive) return null
 
     return (
         <section className="space-y-2">
@@ -55,7 +55,7 @@ const Contributions = ({ endpoint }: ContributionsProps) => {
                 </div>
             )}
         </section>
-    );
-};
+    )
+}
 
-export default Contributions;
+export default Contributions

@@ -44,7 +44,7 @@ const MenuItem = ({
         }`
 
     const handleClick = () => {
-        hideMenu();
+        hideMenu()
         if (onClick) onClick()
     }
 
@@ -72,7 +72,7 @@ const MenuItem = ({
                         <div
                             className={clsx(
                                 "transition-all duration-300 group-hover:-rotate-12",
-                                isActiveRoute && "animate-pulse",
+                                isActiveRoute && "animate-pulse"
                             )}
                         >
                             {icon}
@@ -97,7 +97,7 @@ const MenuItem = ({
                         <div
                             className={clsx(
                                 "transition-all duration-300 group-hover:-rotate-12",
-                                isActiveRoute && "animate-pulse",
+                                isActiveRoute && "animate-pulse"
                             )}
                         >
                             {icon}

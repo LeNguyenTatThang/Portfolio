@@ -1,21 +1,21 @@
-import clsx from "clsx";
-import { motion, Variants } from "framer-motion";
+import clsx from "clsx"
+import { motion, Variants } from "framer-motion"
 
 interface ProgressProps {
-    data: { name: string; percent?: number };
-    className?: string;
+    data: { name: string; percent?: number }
+    className?: string
 }
 
 const Progress = ({ data, className }: ProgressProps) => {
-    const { name, percent = 0 } = data;
+    const { name, percent = 0 } = data
 
     const progressVariants: Variants = {
         initial: { width: 0 },
         animate: {
             width: `${percent}%`,
-            transition: { delay: 0.8 },
-        },
-    };
+            transition: { delay: 0.8 }
+        }
+    }
 
     return (
         <div className="flex items-center justify-between gap-3">
@@ -37,7 +37,7 @@ const Progress = ({ data, className }: ProgressProps) => {
                 {percent.toFixed(0)}%
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Progress;
+export default Progress

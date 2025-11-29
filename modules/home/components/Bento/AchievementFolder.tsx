@@ -13,7 +13,7 @@ const AchievementFolder = () => {
     const filteredAchievements = data
         ?.filter((item: AchievementItem) => item?.is_show)
         .sort((a: AchievementItem, b: AchievementItem) => b.id - a.id)
-        .slice(0, 3);
+        .slice(0, 3)
 
     const items =
         filteredAchievements?.map((item: AchievementItem) => (
@@ -25,7 +25,7 @@ const AchievementFolder = () => {
                 height={100}
                 className="h-full w-full rounded-md object-cover"
             />
-        )) ?? [];
+        )) ?? []
 
     return (
         <div className="mb-4 mt-8 flex w-full items-center justify-center">

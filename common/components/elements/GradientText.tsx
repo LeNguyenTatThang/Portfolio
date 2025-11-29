@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
 interface GradientTextProps {
-    children: ReactNode;
-    className?: string;
-    colors?: string[];
-    animationSpeed?: number;
-    showBorder?: boolean;
+    children: ReactNode
+    className?: string
+    colors?: string[]
+    animationSpeed?: number
+    showBorder?: boolean
 }
 
 export default function GradientText({
@@ -29,7 +29,7 @@ export default function GradientText({
                     className="pointer-events-none absolute inset-0 z-0 animate-gradient bg-cover"
                     style={{
                         ...gradientStyle,
-                        backgroundSize: "300% 100%",
+                        backgroundSize: "300% 100%"
                     }}
                 >
                     <div
@@ -39,7 +39,7 @@ export default function GradientText({
                             height: "calc(100% - 2px)",
                             left: "50%",
                             top: "50%",
-                            transform: "translate(-50%, -50%)",
+                            transform: "translate(-50%, -50%)"
                         }}
                     ></div>
                 </div>
@@ -50,7 +50,7 @@ export default function GradientText({
                     ...gradientStyle,
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
-                    backgroundSize: "300% 100%",
+                    backgroundSize: "300% 100%"
                 }}
             >
                 {children}

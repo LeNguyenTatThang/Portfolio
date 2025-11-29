@@ -1,47 +1,47 @@
-"use client";
+"use client"
 
-import clsx from "clsx";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import clsx from "clsx"
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { useLocale, useTranslations } from "next-intl"
 
 interface Contribution {
-    date: string;
-    contributionCount: number;
-    color: string;
+    date: string
+    contributionCount: number
+    color: string
 }
 
 interface Month {
-    name: string;
-    firstDay: string;
-    totalWeeks: number;
-    contributionsCount: number;
+    name: string
+    firstDay: string
+    totalWeeks: number
+    contributionsCount: number
 }
 
 interface CalendarProps {
     data?: {
         weeks: {
-            firstDay: string;
-            contributionDays: Contribution[];
-        }[];
-        months: Month[];
-        colors: string[];
-    };
+            firstDay: string
+            contributionDays: Contribution[]
+        }[]
+        months: Month[]
+        colors: string[]
+    }
 }
 
 const Calendar = ({ data }: CalendarProps) => {
     const [selectContribution, setSelectContribution] = useState<{
-        count: number | null;
-        date: string | null;
+        count: number | null
+        date: string | null
     }>({
         count: null,
-        date: null,
-    });
+        date: null
+    })
 
-    const t = useTranslations("DashboardPage.github");
-    const locale = useLocale();
+    const t = useTranslations("DashboardPage.github")
+    const locale = useLocale()
 
-    const weeks = data?.weeks ?? [];
+    const weeks = data?.weeks ?? []
     const months =
         data?.months?.map((month: Month) => {
             const filterContributionDay = weeks
@@ -54,15 +54,15 @@ const Calendar = ({ data }: CalendarProps) => {
                 (previousValue, currentValue) =>
                     previousValue + currentValue.contributionCount,
                 0,
-            );
+            )
 
             return {
                 ...month,
-                contributionsCount: getContributionsByMonth,
-            };
-        }) ?? [];
+                contributionsCount: getContributionsByMonth
+            }
+        }) ?? []
 
-    const contributionColors = data?.colors ?? [];
+    const contributionColors = data?.colors ?? []
 
     return (
         <>
@@ -84,10 +84,10 @@ const Calendar = ({ data }: CalendarProps) => {
                         <div key={week.firstDay}>
                             {week.contributionDays.map((contribution) => {
                                 const backgroundColor =
-                                    contribution.contributionCount > 0 && contribution.color;
+                                    contribution.contributionCount > 0 && contribution.color
 
                                 const getRandomDelayAnimate =
-                                    Math.random() * week.contributionDays.length * 0.15;
+                                    Math.random() * week.contributionDays.length * 0.15
 
                                 return (
                                     <motion.span
@@ -99,22 +99,22 @@ const Calendar = ({ data }: CalendarProps) => {
                                             animate: {
                                                 opacity: 1,
                                                 translateY: 0,
-                                                transition: { delay: getRandomDelayAnimate },
-                                            },
+                                                transition: { delay: getRandomDelayAnimate }
+                                            }
                                         }}
                                         className="my-[2px] block h-[12px] w-[12px] rounded-sm bg-neutral-300 dark:bg-neutral-800"
                                         style={backgroundColor ? { backgroundColor } : undefined}
                                         onMouseEnter={() =>
                                             setSelectContribution({
                                                 count: contribution.contributionCount,
-                                                date: contribution.date,
+                                                date: contribution.date
                                             })
                                         }
                                         onMouseLeave={() =>
                                             setSelectContribution({ count: null, date: null })
                                         }
                                     />
-                                );
+                                )
                             })}
                         </div>
                     ))}
@@ -137,8 +137,8 @@ const Calendar = ({ data }: CalendarProps) => {
                                     initial: { opacity: 0 },
                                     animate: {
                                         opacity: 1,
-                                        transition: { delay: index * 0.3 },
-                                    },
+                                        transition: { delay: index * 0.3 }
+                                    }
                                 }}
                                 className="h-[10px] w-[10px] rounded-sm"
                                 style={{ backgroundColor: item }}
@@ -151,7 +151,7 @@ const Calendar = ({ data }: CalendarProps) => {
                 <div
                     className={clsx(
                         `${selectContribution?.date ? "opacity-100" : "opacity-0"}`,
-                        "rounded bg-neutral-200 px-2 text-sm dark:bg-neutral-700",
+                        "rounded bg-neutral-200 px-2 text-sm dark:bg-neutral-700"
                     )}
                 >
                     {selectContribution?.count}{" "}
@@ -160,7 +160,7 @@ const Calendar = ({ data }: CalendarProps) => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
-export default Calendar;
+export default Calendar

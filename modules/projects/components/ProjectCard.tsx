@@ -13,7 +13,7 @@ const ProjectCard = ({
     description,
     image,
     stacks,
-    is_featured,
+    is_featured
 }: ProjectItem) => {
     const t = useTranslations("ProjectsPage");
 
@@ -51,14 +51,14 @@ const ProjectCard = ({
                     </p>
                     <div className="flex flex-wrap items-center gap-3 pt-2">
                         {stacks.map((stack: string, index: number) => {
-                            const stackData = STACKS[stack as keyof typeof STACKS];
+                            const stackData = STACKS[stack as keyof typeof STACKS]
 
                             if (!stackData) return null;
                             return (
                                 <div key={index} className={`${stackData.color}`}>
                                     {stackData.icon}
                                 </div>
-                            );
+                            )
                         })}
                     </div>
                 </div>

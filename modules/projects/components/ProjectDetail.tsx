@@ -12,7 +12,7 @@ const ProjectDetail = ({
     stacks,
     link_demo,
     link_github,
-    content,
+    content
 }: ProjectItem) => {
     const t = useTranslations("ProjectsPage")
     return (

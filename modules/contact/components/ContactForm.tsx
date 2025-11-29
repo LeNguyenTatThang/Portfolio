@@ -18,7 +18,7 @@ const ContactForm = () => {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
+        formState: { errors }
     } = useForm<FormEmail>()
     const [isLoading, setIsLoading] = useState(false)
     const [buttonText, setButtonText] = useState("Send Email")
@@ -71,8 +71,8 @@ const ContactForm = () => {
                             required: true,
                             pattern: {
                                 value: regexEmail,
-                                message: "please enter a valid email",
-                            },
+                                message: "please enter a valid email"
+                            }
                         }}
                         register={register}
                         error={errors}

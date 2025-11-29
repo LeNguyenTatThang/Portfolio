@@ -19,41 +19,41 @@ export const MENU: MenuProps[] = [
         icon: <HomeIcon size={sizeIcon} />,
         isShow: true,
         isExternal: true,
-        eventName: "Go to Home Page",
+        eventName: "Go to Home Page"
     },
     {
         title: "About Me",
         href: "/about",
-        icon: <AboutIcon size={sizeIcon} />,
+        icon: <AboutIcon size={sizeIcon} />
     },
     {
         title: "Projects",
         href: "/projects",
-        icon: <ProjectIcon size={sizeIcon} />,
+        icon: <ProjectIcon size={sizeIcon} />
     },
     {
         title: "Dashboard",
         href: "/dashboard",
-        icon: <DashboardIcon size={sizeIcon} />,
+        icon: <DashboardIcon size={sizeIcon} />
     },
     {
         title: "Achievements",
         href: "/achievements",
-        icon: <AchievementIcon size={sizeIcon} />,
+        icon: <AchievementIcon size={sizeIcon} />
     },
     {
         title: "Contact",
         href: "/contact",
-        icon: <ContactIcon size={sizeIcon} />,
+        icon: <ContactIcon size={sizeIcon} />
     },
     {
         title: "Chat Room",
         href: "/chat",
-        icon: <ChatRoomIcon size={sizeIcon} />,
+        icon: <ChatRoomIcon size={sizeIcon} />
     },
     {
         title: "Blog",
         href: "/blog",
-        icon: <BlogIcon size={sizeIcon} />,
+        icon: <BlogIcon size={sizeIcon} />
     }
 ]
