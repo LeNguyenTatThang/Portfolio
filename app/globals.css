@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-[3px] bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400;
+}
+
+@layer components {
+  .hexagon {
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  }
+}
+
+.prose table {
+  @apply w-full border-collapse my-6;
+}
+
+.prose th {
+  @apply bg-neutral-100 dark:bg-neutral-800 text-left px-4 py-2 font-semibold border-b border-neutral-300 dark:border-neutral-700;
+}
+
+.prose td {
+  @apply px-4 py-2 border-b border-neutral-200 dark:border-neutral-800;
+}
+
+.prose tr:last-child td {
+  @apply border-0;
+}

@@ -1,0 +1,123 @@
+---
+title: "Hiểu rõ Event Loop trong JavaScript – Từng bước một"
+slug: "hieu-ro-event-loop"
+excerpt: "Giải thích chi tiết cơ chế Event Loop, Call Stack, Microtask và Macrotask trong JavaScript."
+cover_image: "/images/blog/event-loop-cover.jpg"
+date: "2025-01-12"
+tags:
+  - javascript
+  - eventloop
+  - async
+  - promise
+---
+
+# Hiểu rõ Event Loop trong JavaScript – Từng bước một
+
+JavaScript là **ngôn ngữ đơn luồng (single-threaded)** — nhưng lại có khả năng xử lý **bất đồng bộ (asynchronous)** một cách cực kỳ hiệu quả.  
+Điều này đạt được nhờ **Event Loop**, thứ giúp JavaScript “đa nhiệm” mà không thực sự chạy song song.
+
+---
+
+## 🧠 Call Stack là gì?
+
+Mọi hàm khi được gọi trong JavaScript đều được đẩy vào **Call Stack**.
+
+```js
+function foo() {
+  console.log("Foo");
+}
+
+function bar() {
+  foo();
+  console.log("Bar");
+}
+
+bar();
+// Output:
+// Foo
+// Bar
+Call Stack hoạt động theo nguyên tắc LIFO (Last In, First Out).
+Hàm nào được gọi sau thì sẽ được thực thi trước khi quay lại hàm trước đó.
+
+⏳ Vấn đề: Blocking Code
+Nếu một đoạn code chạy quá lâu (ví dụ xử lý dữ liệu lớn hoặc chờ API), toàn bộ chương trình sẽ bị chặn (blocked):
+
+```js
+function heavyTask() {
+  for (let i = 0; i < 1e9; i++) {}
+  console.log("Done!");
+}
+
+console.log("Start");
+heavyTask();
+console.log("End");
+// Output:
+// Start
+// Done!
+// End
+```
+
+Mọi thứ sau heavyTask() đều phải đợi nó hoàn thành.
+=> Đây là lý do JavaScript cần cơ chế bất đồng bộ.
+
+🌀 Event Loop hoạt động thế nào?
+Khi ta sử dụng các hàm như setTimeout, fetch, hay Promise, chúng được đưa sang Web API (trình duyệt cung cấp) thay vì chạy trực tiếp trong Stack.
+
+Sau khi hoàn thành, callback của chúng sẽ được đẩy vào hàng đợi (Queue) để Event Loop xử lý.
+
+```js
+console.log("Start");
+
+setTimeout(() => console.log("Timeout!"), 0);
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Timeout!
+```
+
+Dù setTimeout đặt 0ms, nó vẫn chạy sau cùng vì phải đợi Event Loop đưa callback vào lại Stack.
+
+⚙️ Microtask vs Macrotask
+Macrotask Queue: chứa các tác vụ như setTimeout, setInterval.
+
+Microtask Queue: chứa Promise.then, queueMicrotask, v.v.
+
+Event Loop sẽ ưu tiên microtask trước macrotask mỗi vòng lặp.
+
+```js
+
+console.log("Start");
+
+setTimeout(() => console.log("Macrotask"), 0);
+
+Promise.resolve().then(() => console.log("Microtask"));
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Microtask
+// Macrotask
+```
+🔍 Tổng kết
+Event Loop chính là "người điều phối" giúp JavaScript:
+
+Không bị block khi xử lý tác vụ dài
+
+Thực hiện bất đồng bộ hiệu quả
+
+Giữ cho UI luôn mượt mà
+
+## 💡 Ghi nhớ nhanh
+
+| Thành phần       | Mô tả                                        |
+|-----------------|---------------------------------------------|
+| Call Stack       | Nơi thực thi hàm tuần tự                    |
+| Web APIs         | Xử lý tác vụ bất đồng bộ                    |
+| Callback Queue   | Hàng đợi chờ thực thi                        |
+| Event Loop       | Điều phối luồng xử lý giữa Stack và Queue   |
+| Microtask Queue  | Ưu tiên Promise, mutation observer           |

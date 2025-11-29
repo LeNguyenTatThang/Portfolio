@@ -1,0 +1,207 @@
+{
+    "HomePage": {
+        "intro": "Xin chào, tôi là Lê Nguyễn Tất Thắng",
+        "location": "Hiện đang sinh sống tại Jambi, Indonesia 🇮🇩",
+        "location_type": "Làm việc trực tiếp",
+        "resume": "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đam mê, chuyên xây dựng các giải pháp kỹ thuật số có khả năng mở rộng và hiệu suất cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo giao diện người dùng thân thiện và dễ truy cập. Ở mảng backend, tôi phát triển các dịch vụ mạnh mẽ bằng Golang, và đối với di động, tôi xây dựng ứng dụng Android native bằng Kotlin. Tôi là một kỹ sư có tinh thần hợp tác, chú trọng chi tiết, cam kết mang đến những ứng dụng đa nền tảng có cấu trúc tốt và hiệu năng cao.",
+        "skills": {
+            "title": "Kỹ năng",
+            "sub_title": "Những kỹ năng chuyên môn của tôi."
+        },
+        "bento": {
+            "title": "Mục nổi bật",
+            "sub_title": "Khám phá tất cả những gì tôi đã tạo ra, đóng góp và đạt được."
+        }
+    },
+    "AboutPage": {
+        "title": "Giới thiệu",
+        "description": "Một chút về bản thân tôi.",
+        "resume": {
+            "paragraf_1": "Xin chào! Cảm ơn bạn đã ghé thăm trang cá nhân của tôi. Tôi là Lê Nguyễn Tất Thắng, sinh viên ngành Hệ thống Thông tin tại Đại học Jambi. Tôi là một lập trình viên Fullstack với niềm đam mê lớn trong việc xây dựng các sản phẩm phần mềm mang lại giá trị. Công nghệ tôi sử dụng bao gồm Next.js, TypeScript, Tailwind CSS ở frontend và Golang ở backend. Với ứng dụng di động, tôi phát triển ứng dụng Android native bằng Kotlin.",
+            "paragraf_2": "Tôi yêu thích việc tạo ra những giải pháp thân thiện với người dùng và có hiệu năng cao. Dù là xây dựng giao diện trực quan hay thiết kế hệ thống backend, tôi luôn hướng đến sự hiệu quả và rõ ràng trong từng lớp của ứng dụng. Tôi là người học nhanh, thích nghi tốt trong môi trường năng động và tận hưởng việc giải quyết vấn đề phức tạp theo cách hợp tác.",
+            "paragraf_3": "Tôi tin rằng giao tiếp tốt và tinh thần làm việc nhóm là chìa khóa thành công trong phát triển phần mềm. Kinh nghiệm của tôi giúp tôi rèn luyện kỹ năng kỹ thuật, tư duy phân tích cũng như khả năng lãnh đạo. Tôi luôn mong muốn được học hỏi từ đồng đội và đóng góp vào những dự án mang lại ảnh hưởng tích cực.",
+            "paragraf_4": "Trân trọng,"
+        },
+        "career": {
+            "title": "Sự nghiệp",
+            "sub_title": "Hành trình nghề nghiệp của tôi."
+        },
+        "education": {
+            "title": "Học vấn",
+            "sub_title": "Con đường học tập của tôi."
+        },
+        "resume_download_button": "Tải CV",
+        "portfolio_download_button": "Tải Portfolio"
+    },
+    "AchievementsPage": {
+        "title": "Thành tựu",
+        "description": "Bộ sưu tập chứng chỉ và huy hiệu tôi đạt được trong suốt quá trình học tập và làm việc.",
+        "error": "Đã xảy ra lỗi máy chủ.",
+        "no_data": "Không có dữ liệu.",
+        "show_credential": "Xem chứng nhận"
+    },
+    "ProjectsPage": {
+        "title": "Dự án",
+        "description": "Tổng hợp các dự án cá nhân và mã nguồn mở mà tôi đã tạo hoặc đóng góp.",
+        "view_project": "Xem dự án",
+        "tech_stack": "Công nghệ sử dụng",
+        "back_button": "Quay lại",
+        "source_code_text": "Mã nguồn",
+        "live_demo_text": "Bản demo trực tiếp",
+        "error": "Đã xảy ra lỗi máy chủ.",
+        "no_data": "Không có dữ liệu."
+    },
+    "DashboardPage": {
+        "title": "Bảng điều khiển",
+        "description": "Bảng điều khiển cá nhân được xây dựng bằng Next.js API routes, hiển thị thống kê lập trình và đóng góp theo thời gian thực.",
+        "error": "Đã xảy ra lỗi máy chủ.",
+        "umami": {
+            "title": "Umami",
+            "sub_title": "Theo dõi lưu lượng truy cập và tương tác theo thời gian thực từ trang portfolio của tôi.",
+            "overview": {
+                "page_views": "Lượt xem trang",
+                "visitors": "Khách truy cập",
+                "visits": "Lượt truy cập",
+                "countries": "Quốc gia",
+                "events": "Sự kiện"
+            },
+            "chart": {
+                "title": "Xu hướng lưu lượng truy cập",
+                "sessions": "Phiên",
+                "page_views": "Lượt xem trang"
+            },
+            "filter_placeholder": "Lọc theo tên miền..."
+        },
+        "github": {
+            "title": "Đóng góp GitHub",
+            "sub_title": "Hoạt động GitHub của tôi trong năm qua.",
+            "title_total_contribution": "Tổng cộng",
+            "title_total_this_week_contributino": "Tuần này",
+            "title_best_contribution": "Tốt nhất",
+            "title_average_contribution": "Trung bình",
+            "title_less_contribution": "Ít nhất",
+            "title_more_contribution": "Nhiều nhất",
+            "unit": "ngày"
+        },
+        "wakatime": {
+            "title": "Thống kê WakaTime",
+            "sub_title": "Hoạt động lập trình trong 7 ngày gần nhất.",
+            "last_update": "Cập nhật gần nhất",
+            "start_date": "Ngày bắt đầu",
+            "end_date": "Ngày kết thúc",
+            "daily_average": "Trung bình thời gian lập trình mỗi ngày",
+            "total_this_week": "Tổng thời gian trong tuần",
+            "best_day": "Ngày hiệu quả nhất",
+            "all_time_since_joined": "Tổng thời gian lập trình từ khi tham gia",
+            "languages": "Ngôn ngữ hàng đầu"
+        },
+        "codewars": {
+            "title": "Thành tích Codewars",
+            "sub_title": "Thống kê hiệu suất từ các thử thách Codewars.",
+            "title_rank": "Cấp bậc",
+            "title_honor": "Điểm danh dự",
+            "title_completed": "Thử thách đã hoàn thành",
+            "title_leaderboard": "Bảng xếp hạng toàn cầu",
+            "title_clan": "Nhóm",
+            "title_skills": "Kỹ năng liên quan"
+        },
+        "monkeytype": {
+            "title": "Thống kê Monkeytype",
+            "sub_title": "Thống kê và hiệu suất gõ phím.",
+            "joined": "Tham gia",
+            "current_streak": "Chuỗi hiện tại",
+            "unit_days": "ngày",
+            "title_test_started": "Bài kiểm tra đã bắt đầu",
+            "title_test_completed": "Bài kiểm tra đã hoàn thành",
+            "title_time_typing": "Tổng thời gian gõ phím",
+            "title_leaderboard": "Bảng xếp hạng tiếng Anh mọi thời đại",
+            "unit_seconds": "giây",
+            "unit_time": "thời gian",
+            "unit_words": "từ",
+            "top": "top",
+            "days_ago": "ngày trước",
+            "xp_until_next_level": "XP để lên cấp tiếp theo",
+            "total_xp": "Tổng XP"
+        }
+    },
+    "ChatRoomPage": {
+        "title": "Phòng trò chuyện",
+        "description": "Hãy chia sẻ ý kiến, góp ý, câu hỏi hoặc bất cứ điều gì tại đây!",
+        "placeholder": "Nhập tin nhắn của bạn...",
+        "sign_in": {
+            "title": "Vui lòng đăng nhập để tham gia trò chuyện. Yên tâm, dữ liệu của bạn luôn được bảo mật.",
+            "label": "Đăng nhập bằng",
+            "signed_label": "Đăng nhập dưới tên",
+            "sign_out_label": "Đăng xuất"
+        },
+        "widget": {
+            "title": "Phòng trò chuyện",
+            "tooltip_title": "Mở phòng trò chuyện",
+            "tooltip_minimize": "Thu nhỏ",
+            "tooltip_signout": "Đăng xuất"
+        }
+    },
+    "ContactPage": {
+        "title": "Liên hệ",
+        "description": "Kết nối cùng tôi",
+        "social_media": {
+            "title": "Tìm tôi trên mạng xã hội",
+            "gmail": {
+                "title": "Giữ liên lạc",
+                "description": "Liên hệ qua email để trao đổi hoặc hợp tác."
+            },
+            "instagram": {
+                "title": "Theo dõi hành trình của tôi",
+                "description": "Cập nhật những chia sẻ và sáng tạo cá nhân."
+            },
+            "linkedin": {
+                "title": "Kết nối chuyên nghiệp",
+                "description": "Kết nối với tôi trên LinkedIn."
+            },
+            "tiktok": {
+                "title": "Giải trí cùng tôi",
+                "description": "Xem những nội dung thú vị và sáng tạo."
+            },
+            "github": {
+                "title": "Khám phá mã nguồn",
+                "description": "Xem các dự án open-source của tôi."
+            }
+        },
+        "form": {
+            "title": "Hoặc gửi tin nhắn cho tôi",
+            "input_name": "Họ và tên",
+            "input_email": "Email",
+            "input_message": "Nội dung",
+            "button": "Gửi Email"
+        }
+    },
+    "BlogPage": {
+        "title": "Chia sẻ",
+        "description": "Chia sẻ về các công nghệ dự án."
+    },
+    "Footer": {
+        "hire": "Hợp tác cùng tôi.",
+        "copyright_1": "BẢN QUYỀN © ",
+        "copyright_2": "LeNguyenTatThang. Giữ toàn bộ quyền."
+    },
+    "LocaleSwitcher": {
+        "en": "🇺🇸",
+        "vi": "🇻🇳",
+        "label": "Ngôn ngữ"
+    },
+    "Navigation": {
+        "Home": "Trang chủ",
+        "About": "Giới thiệu",
+        "Achievements": "Thành tựu",
+        "Projects": "Dự án",
+        "Dashboard": "Bảng điều khiển",
+        "Chat Room": "Phòng trò chuyện",
+        "Contact": "Liên hệ",
+        "Blog": "Chia sẻ",
+        "About Me": "Về tôi"
+    },
+    "NotFoundPage": {
+        "title": "Không tìm thấy trang",
+        "button": "Quay lại trang chủ"
+    }
+}
