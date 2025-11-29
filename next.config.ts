@@ -12,6 +12,21 @@ const nextConfig: NextConfig = {
         hostname: "btdqgxlgwcoybeflunno.supabase.co",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.qwiklabs.com",
+        pathname: "/**"
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        pathname: "/**"
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        pathname: "/**"
+      }
     ]
   }
 }

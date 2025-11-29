@@ -1,5 +1,3 @@
-'use client'
-
 import NextTopLoader from "nextjs-toploader"
 import Script from "next/script"
 import { getServerSession } from "next-auth"
@@ -11,7 +9,7 @@ import ThemeProviderContext from "@/common/stores/theme"
 import NextAuthProvider from "@/SessionProvider"
 import { ReactNode } from "react"
 
-export default async function RootLayoutContent({ children }: { children: ReactNode }) {
+export default async function RootLayoutContent({ children, params }: { children: ReactNode; params: any }) {
   const messages = await getMessages()
   const session = await getServerSession()
 
