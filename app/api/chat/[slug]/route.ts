@@ -5,11 +5,12 @@ export async function DELETE(req: Request, context: { params: Promise<{ slug: st
   const supabase = await createClient()
   const { slug: id } = await context.params
 
-  try
+  try {
     await supabase.from("messages").delete().eq("id", id)
 
     return NextResponse.json("Data saved successfully", { status: 200 })
 
-  catch
+  } catch {
     return NextResponse.json({ message: "Internal Server Error" }, { status: 500 })
+  }
 }
