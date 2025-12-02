@@ -34,7 +34,7 @@ const MobileHeader = () => {
                     </div>
                     <div className="mt-1 flex items-center gap-2">
                         <Link href="/" passHref>
-                            <h2 className="flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">
+                            <h2 className="flex-grow whitespace-nowrap text-sm font-medium lg:text-xl">
                                 Lê Nguyễn Tất Thắng
                             </h2>
                         </Link>
