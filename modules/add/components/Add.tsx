@@ -1,13 +1,8 @@
 "use client"
 
 import React, { useState } from "react"
-import { BlogItem } from "@/common/types/blog"
 import { ProjectItem } from "@/common/types/projects"
-import { randomUUID } from "crypto"
 import { useSession } from "next-auth/react"
-import InputField from "@/common/components/elements/InputField"
-import { useForm } from "react-hook-form"
-import { STACKS } from "@/common/constants/stacks"
 import AddBlog from "./AddBlog"
 import AddProject from "./AddProject"
 
@@ -30,15 +25,15 @@ const Add = () => {
     const newProject: ProjectItem = {
         id: Date.now(),
         title: projectName,
-        slug: projectName.toLowerCase().replace(/\s+/g, "-"), // tạo slug từ title
-        description: "",   // mặc định rỗng hoặc lấy từ form
-        image: "",         // mặc định rỗng hoặc từ form upload
-        stacks: [],        // mặc định mảng rỗng
+        slug: projectName.toLowerCase().replace(/\s+/g, "-"), 
+        description: "",  
+        image: "",        
+        stacks: [],    
         is_show: true,
         is_featured: isFeatured,
-        link_demo: null,   // tùy chọn
-        link_github: null, // tùy chọn
-        content: null      // tùy chọn
+        link_demo: null,   
+        link_github: null, 
+        content: null    
     }
 
     const handleAddProject = (e: React.FormEvent) => {
@@ -48,10 +43,8 @@ const Add = () => {
         setIsFeatured(false)
     }
 
-
     return (
         <div className="p-6">
-        {/* Tabs */}
         <div className="flex border-b mb-6">
             <button
             onClick={() => setActiveTab("blog")}

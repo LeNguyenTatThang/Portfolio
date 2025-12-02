@@ -135,8 +135,8 @@ export const STACKS: SkillProps = {
     },
     "Node.js": {
         icon: <SiNodedotjs size={iconSize} />,
-        background: "bg-green-600",
-        color: "text-green-600",
+        background: "bg-orange-600",
+        color: "text-orange-600",
         isActive: true
     },
     "Express.js": {
@@ -189,8 +189,8 @@ export const STACKS: SkillProps = {
     },
     MongoDb: {
         icon: <SiMongodb size={iconSize} />,
-        background: "bg-green-600",
-        color: "text-green-600",
+        background: "bg-orange-600",
+        color: "text-orange-600",
         isActive: true
     },
     Firebase: {

@@ -26,7 +26,7 @@ const GITHUB_USER_QUERY = `query($username: String!) {
       }
     }
   }
-}`;
+}`
 
 export const fetchGithubData = async (
   username: string,
