@@ -30,7 +30,7 @@ const Umami = () => {
 
     return (
         <section className="space-y-2">
-            <SectionHeading title={t("umami.title")} icon={<UmamiIcon />} />
+            <SectionHeading title={t("umami.title")} icon={<UmamiIcon className="text-blue-600" />} className="text-blue-600" />
             <SectionSubHeading>
                 <div className="flex w-full flex-col gap-2 md:flex-row md:items-center md:justify-between">
                     <p>{t("umami.sub_title")} </p>

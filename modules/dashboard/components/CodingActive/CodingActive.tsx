@@ -54,7 +54,8 @@ const CodingActive = () => {
         <section className="space-y-2">
             <SectionHeading
                 title={t("wakatime.title")}
-                icon={<WakatimeIcon className="mr-1" />}
+                icon={<WakatimeIcon className="mr-1 text-cyan-600" />}
+                className="text-blue-600"
             />
             <SectionSubHeading>
                 {t("wakatime.sub_title")}

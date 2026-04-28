@@ -27,8 +27,9 @@ const Monkeytype = () => {
         <section className="space-y-2">
             <SectionHeading
                 title={t("monkeytype.title")}
+                className="text-blue-600"
                 icon={
-                    <div className="h-5 w-5 overflow-hidden rounded-full">
+                    <div className="h-5 w-5 overflow-hidden rounded-full text-amber-600">
                         <MonkeytypeIcon />
                     </div>
                 }

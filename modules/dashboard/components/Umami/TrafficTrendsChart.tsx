@@ -46,13 +46,13 @@ const TrafficTrendsChart = ({ data }: DataProps) => {
             {
                 label: "Sessions",
                 data: data?.sessions?.map((point) => point.y),
-                backgroundColor: "rgba(242, 235, 46, 0.7)",
+                backgroundColor: "rgba(59, 130, 246, 0.7)",
                 stack: "traffic"
             },
             {
                 label: "Page views",
                 data: data?.pageviews?.map((point) => point.y),
-                backgroundColor: "rgba(239, 213, 19, 0.7)",
+                backgroundColor: "rgba(37, 99, 235, 0.7)",
                 stack: "traffic"
             }
         ]

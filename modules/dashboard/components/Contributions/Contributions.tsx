@@ -21,8 +21,29 @@ interface ContributionsProps {
 
 const Contributions = ({ endpoint }: ContributionsProps) => {
     const { data, isLoading, error } = useSWR(endpoint, fetcher)
-    const contributionCalendar =
+    const originalContributionCalendar =
         data?.contributionsCollection?.contributionCalendar
+    let contributionCalendar = originalContributionCalendar
+    if (originalContributionCalendar) {
+        const theme = ["#dbeafe", "#60a5fa", "#2563eb", "#1e3a8a"]
+        const colorMap = new Map(
+            originalContributionCalendar.colors?.map((c: string, i: number) => [
+                c,
+                theme[i]
+            ])
+        )
+        contributionCalendar = {
+            ...originalContributionCalendar,
+            colors: theme,
+            weeks: originalContributionCalendar.weeks.map((week: any) => ({
+                ...week,
+                contributionDays: week.contributionDays.map((day: any) => ({
+                    ...day,
+                    color: colorMap.get(day.color) || day.color
+                }))
+            }))
+        }
+    }
 
     const { githubUrl, isActive } = GITHUB
 
@@ -32,7 +53,7 @@ const Contributions = ({ endpoint }: ContributionsProps) => {
 
     return (
         <section className="space-y-2">
-            <SectionHeading title={t("github.title")} icon={<GithubIcon />} />
+            <SectionHeading title={t("github.title")} icon={<GithubIcon className="text-green-600" />} className="text-blue-600" />
             <SectionSubHeading>
                 <p>{t("github.sub_title")}</p>
                 <Link

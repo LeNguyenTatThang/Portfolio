@@ -31,7 +31,7 @@ const Leaderboard = ({ data }: LeaderboardProps) => {
                         </span>
                     ) : null}
                 </div>
-                <span className="text-2xl text-orange-600">{value}</span>
+                <span className="text-2xl text-blue-600">{value}</span>
             </div>
         )
     }
